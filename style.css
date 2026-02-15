@@ -17,3 +17,12 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0.3);
     border-radius: 8px;
 }
+
+textarea{
+    width: 300px;
+    height: 100px;
+    border-style: solid;
+    border-color: gray;
+    font-family: monospace;
+    font-size: 15px;
+}
