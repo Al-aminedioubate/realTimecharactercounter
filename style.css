@@ -33,3 +33,7 @@ textarea{
     justify-content: space-between;
     margin: 20px;
 }
+
+p{
+    font-size: 15px;
+}
