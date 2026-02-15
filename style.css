@@ -16,15 +16,19 @@ body{
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0.3);
     border-radius: 8px;
+    background-color: cadetblue;
 }
 
 textarea{
     width: 300px;
     height: 100px;
-    border-style: solid;
-    border-color: gray;
+    border-style: 2px solid;
+    border-color: black;
     font-family: monospace;
     font-size: 15px;
+    background-color: rgb(151, 200, 201);
+    color: black;
+    resize: none;
 }
 
 .counter{
@@ -36,4 +40,12 @@ textarea{
 
 p{
     font-size: 15px;
+}
+
+#count{
+    color: rgb(241, 245, 246);
+}
+
+#remainCount{
+    color: rgb(240, 201, 7);
 }
