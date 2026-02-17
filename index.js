@@ -20,4 +20,8 @@ textEntry.oninput = () => {
 
 	remaining = totalRemaining - content.length;
 	remainingChar.textContent = remaining;
+
+	if (remaining == 0) {
+		alert("vous n'avez plus d'espace!");
+	}
 };
