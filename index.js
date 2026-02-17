@@ -1,5 +1,7 @@
-//Debut du traitement des donnees
+//Declaration et initialisation de nos variables
 let textEntry = document.getElementById("entryText");
+let totalChar = document.getElementById("count");
+let remainingChar = document.getElementById("remainCount");
 
 let countTab = [];
 let count = 0;
@@ -16,7 +18,8 @@ textEntry.onchange = () => {
 	}
 
 	count = content.length;
+	totalChar.textContent = count;
 
 	remaining = 100 - content.length;
-	document.getElementById("remainCount").textContent = remaining;
+	remainingChar.textContent = remaining;
 };
