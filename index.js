@@ -3,7 +3,7 @@ let textEntry = document.getElementById("entryText");
 let totalChar = document.getElementById("totalCount");
 let remainingChar = document.getElementById("remainCount");
 
-const totalRemaining = 100;
+const MAX = 100;
 
 let countTab = [];
 let countChar = 0;
@@ -19,10 +19,11 @@ textEntry.oninput = () => {
 	countChar = content.length;
 	totalChar.textContent = countChar;
 
-	remaining = totalRemaining - content.length;
+	remaining = MAX - content.length;
 	remainingChar.textContent = remaining;
 
-	if (remaining == 0) {
+	if (textEntry.value.length == MAX) {
+		textEntry.value = textEntry.value.slice(0, MAX);
 		alert("vous n'avez plus d'espace!");
 	}
 };
