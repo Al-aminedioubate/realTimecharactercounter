@@ -9,7 +9,7 @@ let countTab = [];
 let countChar = 0;
 let remaining = 0;
 
-textEntry.onchange = () => {
+textEntry.oninput = () => {
 	let content = textEntry.value.trim();
 	if (content !== "") {
 		countTab.push(content);
