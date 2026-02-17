@@ -3,8 +3,10 @@ let textEntry = document.getElementById("entryText");
 let totalChar = document.getElementById("count");
 let remainingChar = document.getElementById("remainCount");
 
+const totalRemaining = 100;
+
 let countTab = [];
-let count = 0;
+let countChar = 0;
 let remaining = 0;
 
 textEntry.onchange = () => {
@@ -13,13 +15,9 @@ textEntry.onchange = () => {
 		countTab.push(content);
 	}
 
-	for (let i = 0; i < countTab.length; i++) {
-		console.log(countTab[i]);
-	}
+	countChar = content.length;
+	totalChar.textContent = countChar;
 
-	count = content.length;
-	totalChar.textContent = count;
-
-	remaining = 100 - content.length;
+	remaining = totalRemaining - content.length;
 	remainingChar.textContent = remaining;
 };
