@@ -16,10 +16,7 @@ textEntry.onchange = () => {
 	}
 
 	count = content.length;
-	document.getElementById("count").textContent = count;
 
 	remaining = 100 - content.length;
 	document.getElementById("remainCount").textContent = remaining;
-
-	console.log("le nombre restant est : " + remaining);
 };
