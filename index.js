@@ -22,8 +22,8 @@ textEntry.oninput = () => {
 	remaining = MAX - content.length;
 	remainingChar.textContent = remaining;
 
-	if (textEntry.value.length == MAX) {
+	/*if (textEntry.value.length == MAX) {
 		textEntry.value = textEntry.value.slice(0, MAX);
 		alert("vous n'avez plus d'espace!");
-	}
+	}*/
 };
