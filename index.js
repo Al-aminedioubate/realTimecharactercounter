@@ -2,12 +2,19 @@
 let textEntry = document.getElementById("entryText");
 
 let countTab = [];
-let content = textEntry.value;
-countTab.push(content);
-console.log(countTab);
+let count = 0;
 
 textEntry.onchange = () => {
-	for (let i = 0; i < countTab.length; i++) {
-		console.log(countTab[i + 1]);
+	let content = textEntry.value.trim();
+	if (content !== "") {
+		countTab.push(content);
 	}
+
+	for (let i = 0; i < countTab.length; i++) {
+		console.log(countTab[i]);
+	}
+
+	count = content.length;
+    
+	console.log("le nombre est : " + count);
 };
