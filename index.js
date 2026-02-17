@@ -3,6 +3,7 @@ let textEntry = document.getElementById("entryText");
 
 let countTab = [];
 let count = 0;
+let remaining = 0;
 
 textEntry.onchange = () => {
 	let content = textEntry.value.trim();
@@ -16,7 +17,9 @@ textEntry.onchange = () => {
 
 	count = content.length;
 	document.getElementById("count").textContent = count;
-	console.log("le nombre est : " + count);
 
-    
+	remaining = 100 - content.length;
+	document.getElementById("remainCount").textContent = remaining;
+
+	console.log("le nombre restant est : " + remaining);
 };
