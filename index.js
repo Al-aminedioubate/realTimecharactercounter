@@ -1,6 +1,6 @@
 //Declaration et initialisation de nos variables
 let textEntry = document.getElementById("entryText");
-let totalChar = document.getElementById("count");
+let totalChar = document.getElementById("totalCount");
 let remainingChar = document.getElementById("remainCount");
 
 const totalRemaining = 100;
