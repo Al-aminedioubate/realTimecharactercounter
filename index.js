@@ -15,6 +15,8 @@ textEntry.onchange = () => {
 	}
 
 	count = content.length;
-    
+	document.getElementById("count").textContent = count;
 	console.log("le nombre est : " + count);
+
+    
 };
