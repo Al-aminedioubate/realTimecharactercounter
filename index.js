@@ -9,6 +9,7 @@ let countTab = [];
 let countChar = 0;
 let remaining = 0;
 
+//cette fonctionnalite permet de declencher le compte des caractere restant et entrer des que l'utilisateur commence a entrer les textes
 textEntry.oninput = () => {
 	let content = textEntry.value.trim();
 	if (content !== "") {
