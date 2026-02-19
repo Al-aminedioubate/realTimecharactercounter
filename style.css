@@ -1,3 +1,4 @@
+/*General style section*/
 body{
     margin: 0;
     height: 60vh;
@@ -7,6 +8,7 @@ body{
     font-family: monospace;
 }
 
+/*container style section*/
 .container{
     width: 600px;
     height: 300px;
