@@ -42,10 +42,12 @@ textarea{
     margin: 20px;
 }
 
+/*les p style section*/
 p{
     font-size: 15px;
 }
 
+/*Les couleur de sortie pour les nmbres de caractere style section*/
 #totalCount{
     color: rgb(241, 245, 246);
 }
