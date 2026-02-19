@@ -20,6 +20,7 @@ textEntry.oninput = () => {
 	countChar = content.length;
 	totalChar.textContent = countChar;
 
+	//comptage du nombre du caractere restant
 	remaining = MAX - content.length;
 	remainingChar.textContent = remaining;
 };
