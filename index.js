@@ -16,6 +16,7 @@ textEntry.oninput = () => {
 		countTab.push(content);
 	}
 
+	//comptage du nombre du caractere utiliser
 	countChar = content.length;
 	totalChar.textContent = countChar;
 
