@@ -21,6 +21,7 @@ body{
     background-color: cadetblue;
 }
 
+/*text area style section*/
 textarea{
     width: 300px;
     height: 100px;
@@ -33,6 +34,7 @@ textarea{
     resize: none;
 }
 
+/*counter style section*/
 .counter{
     display: flex;
     width: 300px;
